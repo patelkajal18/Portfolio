@@ -10,6 +10,12 @@
 
 
 <style>
+h1 {
+	position: absolute;
+    left: 240px;
+    top: 150px;
+    z-index: -1;
+}
 body {
 		background-image: url("https://static.tumblr.com/ca9a0eed343e92484dd21731a3e9f015/h361b7e/SDDojy06h/tumblr_static_tumblr_static__640.jpg");
 }
@@ -18,6 +24,7 @@ p {
     left: 240px;
     top: 350px;
     z-index: -1;
+}
 
 </body>
 </html>
