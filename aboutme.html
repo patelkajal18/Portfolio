@@ -20,10 +20,7 @@ p {
     z-index: -1;
 }
 button {
-    position: absolute;
-    left: 540px;
-    top: 520px;
-    z-index: -1;
+   
     background-color: transparent;
     opacity: 100;
     filter: Alpha(opacity=50);
@@ -35,26 +32,51 @@ img {
 	top: 650px;
 	z-index: -1;
 }
-button1 {
+.btn-group button {
+    background-color: transparent; /* Green background */
+    border: hidden; /* Green border */
+    color: ivory; /* White text */
+    padding: 2px 5px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
     position: absolute;
-    left: 560px;
+    left: 540px;
     top: 520px;
     z-index: -1;
-    background-color: transparent;
-    opacity: 100;
-    filter: Alpha(opacity=50);
-    border: hidden;
+    color:ivory;
+    text-align:center;
+    font-family:georgia;
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: #3e8e41;
 }	
+	
+	
 	</style>
 	
 	
 	
 </head>
 <body>
-<button onclick="document.getElementById('middle').scrollIntoView();">About |</button>
-<button style="color:ivory;text-align:center;font-family:georgia">About |</button>
-<button1 onclick="document.getElementById('middle').scrollIntoView();">Work |</button>
-<button1 style="color:ivory;text-align:center;font-family:georgia">Work |</button>
+<div class="btn-group">
+  <button>About</button>
+  <button>Work</button>
+  <button>Contact</button>
+</div>
+
 	
 <h1 style="color:ivory;text-align:center;font-family:georgia">Kajal Patel</h1>
 <p style="color:ivory;text-align:center;font-family:georgia">About | Work | Contact</p>
@@ -66,7 +88,10 @@ document.getElementById('id').style.borderRadius = '50%';
 
 
 
+
+
 </body>
 </html>
+
 
 
